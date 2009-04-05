@@ -1,0 +1,24 @@
+<h1>Listing thing_type2s</h1>
+
+<table>
+  <tr>
+    <th>Width</th>
+    <th>Height</th>
+    <th>Description</th>
+  </tr>
+
+<% @thing_type2s.each do |thing_type2| %>
+  <tr>
+    <td><%=h thing_type2.width %></td>
+    <td><%=h thing_type2.height %></td>
+    <td><%=h thing_type2.description %></td>
+    <td><%= link_to 'Show', thing_type2 %></td>
+    <td><%= link_to 'Edit', edit_thing_type2_path(thing_type2) %></td>
+    <td><%= link_to 'Destroy', thing_type2, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New thing_type2', new_thing_type2_path %>
