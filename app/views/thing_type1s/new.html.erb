@@ -1,0 +1,23 @@
+<h1>New thing_type1</h1>
+
+<% form_for(@thing_type1) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :address %><br />
+    <%= f.text_field :address %>
+  </p>
+  <p>
+    <%= f.label :number_of_peaches %><br />
+    <%= f.text_field :number_of_peaches %>
+  </p>
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', thing_type1s_path %>

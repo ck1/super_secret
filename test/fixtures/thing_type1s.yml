@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  address: MyString
+  number_of_peaches: 1
+
+two:
+  name: MyString
+  address: MyString
+  number_of_peaches: 1

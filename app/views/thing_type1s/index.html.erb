@@ -1,0 +1,24 @@
+<h1>Listing thing_type1s</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Address</th>
+    <th>Number of peaches</th>
+  </tr>
+
+<% @thing_type1s.each do |thing_type1| %>
+  <tr>
+    <td><%=h thing_type1.name %></td>
+    <td><%=h thing_type1.address %></td>
+    <td><%=h thing_type1.number_of_peaches %></td>
+    <td><%= link_to 'Show', thing_type1 %></td>
+    <td><%= link_to 'Edit', edit_thing_type1_path(thing_type1) %></td>
+    <td><%= link_to 'Destroy', thing_type1, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New thing_type1', new_thing_type1_path %>
